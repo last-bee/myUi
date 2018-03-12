@@ -2,20 +2,7 @@
 
 > my ui
 
-## Build Setup
+## 自己尝试对常用组建进行封装（vue组建）方便以后的使用与加强vue组建的概念
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> toast组建
+    + 关于消息提醒的组建，控制位置，时间以及自定义class（没有图标）
