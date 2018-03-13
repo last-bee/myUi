@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
+    <!-- <h1>{{ msg }}</h1>
+    <h2>Essential Links</h2> -->
+    <!-- <ul>
       <li>
         <a
           href="https://vuejs.org"
@@ -79,28 +79,48 @@
           awesome-vue
         </a>
       </li>
-    </ul>
+    </ul> -->
+    <radio
+    :options = "options"
+    ></radio>
   </div>
 </template>
 
 <script>
+import radio from '@/ui/radio/radio.vue'
+console.log(radio)
 export default {
   name: 'HelloWorld',
   data () {
     return {
+      options:[
+        {
+          label: '被禁用',
+          value: '值F',
+          // disabled: true
+        },
+        {
+          label: '选项A',
+          value: '值A'
+        },
+        // {
+        //   label: '选项B',
+        //   value: '值B'
+        // }
+      ],
       msg: 'Welcome to Your Vue.js App'
     }
   },
+  components:{
+    radio
+  },
   mounted(){
-    let times = 0
-    setInterval(()=>{
-      times ++ 
-      if(times >5 ) return
-      this.$Toast({
-        message:'message' + times,
-        duration:500000000
-      })
-    },1000)
+   
+      // this.$Toast({
+      //   message:'message',
+      //   duration:5000
+      // })
+   
     
 
   }
